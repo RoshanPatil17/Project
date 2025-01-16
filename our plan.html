@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Plans</title>
+  <style>
+    /* General styles */
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+      background: linear-gradient(135deg, #000000, #222222);
+      color: #fff;
+    }
+
+    /* Plans section */
+    .plans {
+      text-align: center;
+      padding: 2rem 1rem;
+      animation: fadeIn 1.5s ease-in-out;
+    }
+
+    .plans h2 {
+      font-size: 2.5rem;
+      color: #00ffcc;
+      margin-bottom: 2rem;
+      position: relative;
+    }
+
+    .plans h2::after {
+      content: "";
+      display: block;
+      width: 60px;
+      height: 4px;
+      background-color: #00ffcc;
+      margin: 0.5rem auto;
+      border-radius: 2px;
+    }
+
+    .plan-container {
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      flex-wrap: wrap;
+    }
+
+    /* Plan Card Styles */
+    .plan-card {
+      background: linear-gradient(145deg, #111, #333);
+      border: 1px solid rgba(0, 255, 204, 0.7);
+      padding: 2rem;
+      border-radius: 15px;
+      width: 300px;
+      text-align: center;
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.4);
+      transition: transform 0.3s, box-shadow 0.3s, background 0.3s, scale 0.3s;
+      position: relative;
+      overflow: hidden;
+      cursor: pointer;
+    }
+
+    .plan-card:hover {
+      transform: translateY(-10px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 255, 204, 0.6);
+      background: linear-gradient(145deg, #333, #444);
+    }
+
+    .plan-card::before {
+      content: "";
+      position: absolute;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      background: radial-gradient(circle, rgba(0, 255, 204, 0.2), transparent);
+      opacity: 0;
+      transition: opacity 0.4s ease;
+      z-index: 0;
+    }
+
+    .plan-card:hover::before {
+      opacity: 1;
+    }
+
+    .plan-card:hover .price {
+      transform: scale(1.1);
+      color: #ffcc00;
+    }
+
+    .plan-card:hover h3 {
+      color: #ff9933;
+    }
+
+    .plan-card h3 {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+      text-transform: uppercase;
+      color: #00ffcc;
+      z-index: 1;
+      position: relative;
+      transition: color 0.3s ease;
+    }
+
+    .price {
+      font-size: 2rem;
+      color: #00ffcc;
+      margin: 1.5rem 0;
+      z-index: 1;
+      position: relative;
+      transition: color 0.3s ease, transform 0.3s ease;
+    }
+
+    .plan-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      color: #ddd;
+      text-align: left;
+      z-index: 1;
+      position: relative;
+    }
+
+    .plan-card ul li {
+      margin: 0.5rem 0;
+    }
+
+    /* Button Styles */
+    .join-now {
+      display: inline-block;
+      margin-top: 1rem;
+      padding: 0.7rem 1.5rem;
+      color: #fff;
+      background-color: #00ffcc;
+      text-decoration: none;
+      border-radius: 5px;
+      font-weight: bold;
+      position: relative;
+      z-index: 1;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .join-now:hover {
+      background-color: #00cc99;
+      transform: scale(1.05);
+    }
+
+    .join-now::after {
+      content: " →";
+    }
+
+    /* Keyframe Animations */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <section class="plans">
+    <h2>Our Plans</h2>
+    <div class="plan-container">
+      <div class="plan-card">
+        <h3>BASIC</h3>
+        <p class="price">3000 k /Month</p>
+        <ul>
+          <li>Smart workout plan</li>
+          <li>At home workouts</li>
+        </ul>
+        <a href="#" class="join-now">Join Now</a>
+      </div>
+      <div class="plan-card">
+        <h3>PRO</h3>
+        <p class="price">5000 k /Month</p>
+        <ul>
+          <li>Pro GYMS</li>
+          <li>Smart workout plan</li>
+          <li>At home workouts</li>
+        </ul>
+        <a href="#" class="join-now">Join Now</a>
+      </div>
+      <div class="plan-card">
+        <h3>PREMIUM</h3>
+        <p class="price">8000 k /Month</p>
+        <ul>
+          <li>ELITE Gyms & Classes</li>
+          <li>Pro GYMS</li>
+          <li>Smart workout plan</li>
+          <li>At home workouts</li>
+          <li>Personal Training</li>
+        </ul>
+        <a href="#" class="join-now">Join Now</a>
+      </div>
+    </div>
+  </section>
+</body>
+</html>

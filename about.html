@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us - Patil Fitness</title>
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            display: flex;
+            height: 100vh;
+            font-family: 'Baloo Bhai 2', cursive;
+            color: #333;
+            overflow: hidden; /* Prevents scrolling */
+            background: url(contact.png);
+            height: 100vh;
+        background-size: cover;
+        background-position: center;
+        }
+        p{
+            color: #010101;
+        }
+
+        .left, .right {
+            overflow-y: hidden; /* Disables scroll in both sections */
+        }
+
+        .left {
+            width: 60%;
+            height: 100vh;
+        
+            padding: 20px;
+        }
+
+        .right {
+            width: 40%;
+            height: 100vh;
+           
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+        }
+
+        header {
+            background-color: #545754;
+            color:rgb(14, 238, 254);
+            text-align: center;
+            padding: 10px 0;
+            font-size: 2em;
+            border-radius: 8px;
+        }
+
+        .form-container {
+            max-width: 570px;
+            padding: 20px;
+            background: #84807f;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+        }
+
+        h1 {
+            font-size: 24px;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 10px;
+        }
+
+        .input-group input {
+            flex: 1;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 10px;
+            border: 3px solid #ccc;
+            border-radius: 12px;
+            font-size: 17px;
+        }
+
+        input:focus {
+            outline: none;
+            border-color:rgb(14, 238, 254);
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: flex-start;
+            gap: 10px;
+        }
+
+        .checkbox-group label {
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .send-btn {
+            padding: 10px;
+            background-color: #010101;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .send-btn:hover {
+            background-color: #3c3837;
+        }
+
+        h2 {
+           color:  rgb(14, 238, 254);
+            margin-bottom: 15px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            margin: 10px 0;
+            padding: 10px;
+            background: #f0f0f0;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+        }
+
+        ul li::before {
+            content: '\2713';
+            color:rgb(14, 238, 254);
+            font-size: 1.5em;
+            margin-right: 10px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="left">
+        <header>About Us - Patil Fitness</header>
+        <div class="container">
+            <h2>Welcome to Patil Fitness</h2>
+            <p>At <strong>Patil Fitness</strong>, located in the heart of Andheri, we redefine what it means to achieve a healthy lifestyle. Our state-of-the-art facilities, expert trainers, and vibrant community come together to create an environment that inspires you to reach your fitness goals.</p>
+
+            <h2>Our Mission</h2>
+            <p>We aim to empower individuals and couples to transform their health, fitness, and confidence. Whether you're just starting out or pushing past plateaus, we’re here to support you on your journey to a healthier, happier you.</p>
+
+            <h2>Why Choose Patil Fitness?</h2>
+            <ul>
+                <li>Couple-Friendly Packages: Achieve your goals together with our 12-month couple membership for just ₹28,000.</li>
+                <li>Premium Amenities: Enjoy a steam area, a refreshing swimming pool, and a dedicated Zumba zone.</li>
+                <li>Spacious Changing Rooms: Designed for comfort and convenience.</li>
+                <li>Community Spirit: Join a fitness family that motivates and celebrates every milestone.</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="right">
+        <div class="form-container">
+            <h1>1 DAY FREE PASS</h1>
+            <form action="#" method="post">
+                <div class="input-group">
+                    <input type="text" name="first-name" placeholder="First Name" required>
+                    <input type="text" name="last-name" placeholder="Last Name" required>
+                </div>
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="mobile" placeholder="Mobile" required>
+                <div class="checkbox-group">
+                    <input type="checkbox" id="interest" name="interest">
+                    <label for="interest">I am interested in About Us at Patil Fitness Andheri, Mumbai. Please call me.</label>
+                </div>
+                <button type="submit" class="send-btn">SEND</button>
+            </form>
+        </div>
+
+        <div class="container">
+            <h2>What We Offer</h2>
+            <ul>
+                <li>Group Classes: Engage in high-energy Zumba sessions or calming yoga routines.</li>
+                <li>Personal Training: Work one-on-one with our certified trainers for a personalized experience.</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

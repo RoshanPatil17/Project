@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roshan/Antara Fitness</title>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+
+<style>
+    body{
+       
+        color: white;
+        margin: 0px;
+        padding: 0px;
+        background: url('j.png');
+        height: 100vh;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Baloo Bhai';
+   
+    }
+    .left{
+        display: inline-block;
+        position: absolute;
+        left: 34px;
+        top: 20px;
+        cursor: pointer;
+       
+    }
+    .left img{
+        width: 60px;
+        filter: invert(100%);
+        padding-left: 14px;
+    }
+    .left div{
+        text-align: center;
+    }
+    .mid{
+        display: block;
+        width:45%;
+        margin: 20px auto;
+   
+    }
+
+    .navbar{
+        display: inline-block;
+    }
+    .navbar li{
+        display: inline-block;
+        font-size: 20px;
+        
+        
+    }
+    .navbar li a{
+        color: rgb(255, 255, 255);
+        text-decoration: none;
+        padding: 35px 20px ;
+    }
+    .navbar li a:hover,.navbar li a.active{
+        text-decoration: underline;
+        color: rgb(14, 238, 254);
+        
+    }
+    .right{
+        display: inline-block;
+        position: absolute;
+        right: 34px;
+        top: 29px;
+    }
+    .btn{
+        margin: 0px 10px;
+        background-color: black;
+        color: white;
+        padding: 4px 14px;
+        border: 2px solid grey;
+        border-radius: 8px;
+        cursor: pointer;
+        font-family: 'Baloo Bhai';
+    }
+    .btn:hover{
+        background-color: rgb(78, 74, 74);
+        color: aqua;
+    }
+    
+    .container{
+        color: rgb(0, 0, 0);
+        width: 38%;
+        border-radius: 23px;
+        margin: 80px 65px;
+        padding: 60px ;
+        border: 3px solid rgb(254, 253, 253);
+        font-size: 15px; 
+    }
+    .form-group input{
+        text-align: center;
+        display: block;
+        width: 440px;
+        padding: 3px;
+        border: 3px solid rgb(12, 12, 12);
+        margin: 9px auto;
+        border-radius: 10px;
+        font-family: 'Baloo Bhai';
+    }
+    .container h1{
+        text-align: center;
+    }
+   .container button{
+        display: block;
+        width: 450px;
+        margin: 12px auto;
+    }
+</style>
+<body>
+   
+<header class="header">
+    <div class="left">
+    <img src="logo.png" alt="">
+    <div>Patil Fitness</div>
+    </div>
+    <div class="mid">
+        <ul class="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About us</a></li>
+            <li><a href="contact.html"> Contact us</a></li>
+            <li><a href="review.html">Review</a></li>
+            <li><a href="our plan.html">Our Plan</a></li>
+            <li><a href="class.html">Class</a></li>
+        </ul>
+    </div>
+    <div class="right">
+    <button class="btn">Call Us Now //8788254323//</button>
+    <button class="btn"> <a href="login.html">login now</a></button>
+   
+    </div>
+</header>
+<div class="container">
+<h1>Join the best Family gym of Andheri now</h1>
+<form action="noaction.php">
+    <div class="form-group">
+    <input type="text" placeholder="Enter your Name">
+    </div>
+    <div class="form-group">
+        <input type="text" placeholder="Enter your Age">
+        </div>
+        <div class="form-group">
+            <input type="text" placeholder="Enter your Email">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+                </div>
+    <div>
+    <button class="btn">Submit</button>
+    </div>
+</form>
+</div>
+    
+</body>
+</html>

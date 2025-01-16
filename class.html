@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Classes</title>
+    <style>
+        :root {
+            --primary-color: skyblue;
+            --hover-color: rgba(135, 206, 250, 0.8);
+            --white: #ffffff;
+            --shadow-color: rgba(0, 0, 0, 0.1);
+            --text-color: #555;
+        }
+
+        body {
+            font-family: 'Poppins', Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: var(--text-color);
+            background: url(class.jpg);
+            height: 100vh;
+        background-size: cover;
+        background-position: center;
+        font-family: 'Baloo Bhai';
+
+        }
+
+        .section__container {
+            padding: 2rem 1rem;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .section__header {
+            text-align: center;
+            font-size: 2.5rem;
+            font-weight: bold;
+            color:#00000075;
+            margin-bottom: 0.5rem;
+        }
+
+        .section__description {
+            text-align: center;
+            font-size: 1.1rem;
+            margin-bottom: 2rem;
+            color: #101010;
+        }
+
+        .class__grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        .class__card {
+            position: relative;
+            overflow: hidden;
+            border-radius: 10px;
+            background: var(--white);
+            box-shadow: 0 2px 6px var(--shadow-color);
+            transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+            cursor: pointer;
+        }
+
+        .class__card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 6px 12px var(--shadow-color);
+            border: 2px solid var(--primary-color);
+        }
+
+        .class__card img {
+            width: 100%;
+            height: 400px;
+            display: block;
+            transition: transform 0.4s ease;
+        }
+
+        .class__card:hover img {
+            transform: scale(1.1);
+        }
+
+        /* Specific border for 1st and 3rd card images */
+        .class__card:nth-child(1) img,
+        .class__card:nth-child(3) img {
+            border: 2px solid var(--primary-color);
+            border-radius: 10px;
+            margin: 0;
+            padding: 0;
+            display: block;
+        }
+
+        .class__content {
+            background: var(--primary-color);
+            color: var(--white);
+            padding: 1rem;
+            text-align: center;
+            z-index: 2;
+        }
+
+        .class__content h4 {
+            font-size: 1.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .class__content p {
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        @media (max-width: 768px) {
+            .class__grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .class__grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<link href='https://fonts.googleapis.com/css?family=Baloo Bhai' rel='stylesheet'>
+<body>
+    <section class="section__container">
+        <h2 class="section__header">Our Classes</h2>
+        <p class="section__description">
+            Discover a diverse range of exhilarating classes at our gym designed to cater to all fitness levels and interests. Whether you're a seasoned athlete or just starting your fitness journey, our classes offer something for everyone.
+        </p>
+        <div class="class__grid">
+            <div class="class__card">
+                <img src="class1.jpg" alt="Flexibility & Mobility">
+                <div class="class__content">
+                    <h4>Flexibility & Mobility</h4>
+                    <p>Yoga & Pilates</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <img src="man-7847245.jpg" alt="Strength Training">
+                <div class="class__content">
+                    <h4>Strength Training</h4>
+                    <p>Resistance Training</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <img src="class7.jpg" alt="HIIT">
+                <div class="class__content">
+                    <h4>HIIT</h4>
+                    <p>Circuit Training</p>
+                </div>
+            </div>
+            <div class="class__card">
+                <img src="men-1203885.jpg" alt="Group Fitness">
+                <div class="class__content">
+                    <h4>Group Fitness</h4>
+                    <p>Zumba or Dance</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

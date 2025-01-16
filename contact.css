@@ -1,0 +1,81 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f8f9;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh; 
+    background: url(contact.png);
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    font-family: 'Baloo Bhai';
+    
+}
+
+.container {
+    width: 90%; 
+    max-width: 800px; 
+    background: rgb(86, 82, 82);
+    backdrop-filter: blur(100px);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+h1 {
+    color: #0c0c0c;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #00796b;
+    padding: 12px;
+    text-align: center;
+}
+
+th {
+    background-color: #edf0f0;
+    color: rgb(15, 14, 14);
+   
+}
+
+tr {
+    background-color: #edf0f0;
+    color: rgb(0, 0, 0);
+   
+}
+
+tr:hover {
+    background-color: #303636;
+    color: rgb(255, 250, 250);
+    cursor: pointer;
+}
+td:hover{
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    th, td {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+}
